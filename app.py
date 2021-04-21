@@ -21,9 +21,7 @@ def index():
 
 # Function to get the filenames in the folders of AWS Bucket
 def list_files(dir):
-    # AWS Credentials
-    AWS_ACCESS_KEY='AKIAYHIIKXEA666KEZGF'
-    AWS_SECRET_ACCESS_KEY='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'
+   
     AWS_STORAGE_BUCKET_NAME='1717-mybucket'
     AWS_S3_REGION_NAME='ap-south-1'
     bucket_name='1717-mybucket'
