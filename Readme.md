@@ -37,4 +37,5 @@ e. Run the app in local using command python3 app.py
 ![Screenshot (8)](https://user-images.githubusercontent.com/73656498/115606248-19ea1c80-a301-11eb-917c-bb85ac0bd986.png)
 ![Screenshot (9)](https://user-images.githubusercontent.com/73656498/115606295-266e7500-a301-11eb-80df-de9b77fee647.png)
 
-# URL [http://13.233.18.194:8085/]{http://13.233.18.194:8085/}
+URL http://13.233.18.194:8085/
+
