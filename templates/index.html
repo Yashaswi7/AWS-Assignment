@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <style>
+    .header {
+      padding: 15px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    .input-container { 
+      display: inline;
+      width: 100%;
+      margin-inline-start: 30px;
+      white-space: nowrap;
+    }
+    .input {
+      width: 10%;
+      padding: 10px 30px;
+      outline: none;
+    }
+    .input:focus {
+      border: 2px solid green;
+    }
+    .bgc {
+      background-color: green;
+      color: white;
+      display: inline;
+      margin-left: 25px;
+      padding: 15px 20px;
+      border: none;
+      cursor: pointer;
+      width: 10%;
+      opacity: 0.9;
+      
+    }
+	
+    .output {
+      margin-top: 100px;
+      background-color:red;
+      opacity: 0.6;
+      width: 100%;
+      padding: 10px 30px
+    }
+	
+   </style>
+  </head>
+  <body>
+    <h1 style="text-align:center" class="header">AWS S3 Bucket Files</h1>
+    <form action="{{ url_for("index")}}" method="post" class="form_container">
+      <label for="Folder Name"><b>Enter folder name:</b></label>
+      <div class="input-container">
+        <input class="input" type="text" placeholder="A or B or C" name="fname" />
+        <button type="submit" id = "button" class="bgc" >Get File Names</button>
+      </div>
+    {% if files %}
+    <div class="output">
+      <p style="color:yellow;"><b>List of files:</b></p>
+      <ul>
+        {% for result in files%}
+        <li style="color:yellow;">{{ result }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+    </form>
+  </body>
+</html>
