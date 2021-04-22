@@ -21,13 +21,11 @@ def index():
 
 # Function to get the filenames in the folders of AWS Bucket
 def list_files(dir):
-   
-    AWS_STORAGE_BUCKET_NAME='1717-mybucket'
-    AWS_S3_REGION_NAME='ap-south-1'
+    
     bucket_name='1717-mybucket'
 
     file_list=[]
-    session = Session(aws_access_key_id=AWS_ACCESS_KEY, aws_secret_access_key=AWS_SECRET_ACCESS_KEY)
+    session = Session()
     s3 = session.resource('s3')
     for obj in s3.Bucket(bucket_name).objects.filter(Prefix=dir).all():
         file_name=obj.key.split(dir + "/")[1]

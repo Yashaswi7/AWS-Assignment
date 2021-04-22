@@ -19,10 +19,10 @@
       outline: none;
     }
     .input:focus {
-      border: 2px solid green;
+      border: 2px solid red;
     }
     .bgc {
-      background-color: green;
+      background-color: red;
       color: white;
       display: inline;
       margin-left: 25px;
@@ -36,8 +36,6 @@
 	
     .output {
       margin-top: 100px;
-      background-color:red;
-      opacity: 0.6;
       width: 100%;
       padding: 10px 30px
     }
@@ -54,10 +52,10 @@
       </div>
     {% if files %}
     <div class="output">
-      <p style="color:yellow;"><b>List of files:</b></p>
+      <p style="color:black;"><b>List of files:</b></p>
       <ul>
         {% for result in files%}
-        <li style="color:yellow;">{{ result }}</li>
+        <li style="color:black;">{{ result }}</li>
         {% endfor %}
       </ul>
     </div>
