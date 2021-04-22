@@ -33,6 +33,8 @@ e. Run the app in local using command python3 app.py
 
 @Your url will be public ip adress:8085. This url will show your flask application
 
+![Screenshot (17)](https://user-images.githubusercontent.com/73656498/115764994-d4daee80-a3c3-11eb-92a7-088ead6220ca.png)
+
 ## Billing information
 ![Screenshot (8)](https://user-images.githubusercontent.com/73656498/115606248-19ea1c80-a301-11eb-917c-bb85ac0bd986.png)
 ![Screenshot (9)](https://user-images.githubusercontent.com/73656498/115606295-266e7500-a301-11eb-80df-de9b77fee647.png)
